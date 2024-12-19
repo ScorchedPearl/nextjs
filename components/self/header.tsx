@@ -7,7 +7,7 @@ import { Input } from "../ui/input";
 import { useCurrentUser  } from "@/hooks/user";
 import Loader from "@/app/loading/page";
 const Header = () => {
-  let {user,isLoading} = useCurrentUser();
+  const {user,isLoading} = useCurrentUser();
   console.log("Current User:", user);
   if(isLoading){
     return <Loader></Loader>
